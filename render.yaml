@@ -1,0 +1,26 @@
+services:
+  - type: worker
+    name: discord-anuncios-bot
+    env: node
+    plan: free
+    buildCommand: "npm ci"
+    startCommand: "node src/index.js"
+    envVars:
+      - key: DISCORD_TOKEN
+        sync: false
+      - key: CLIENT_ID
+        sync: false
+      - key: GUILD_ID
+        sync: false
+      - key: ALLOWED_ROLE_IDS
+        sync: false
+      - key: ANNOUNCE_CHANNEL_ID
+        sync: false
+      - key: EMBED_COLOR
+        sync: false
+      - key: PORT
+        sync: false
+      - key: RENDER_PING_URL
+        sync: false
+      - key: PING_INTERVAL_MINUTES
+        sync: false

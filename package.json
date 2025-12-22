@@ -1,0 +1,20 @@
+{
+  "name": "discord-anuncios-bot",
+  "version": "1.0.0",
+  "description": "Bot de anuncios con roles permitidos + embeds estéticos + Render keep-alive",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node src/index.js",
+    "register": "node src/utils/registerCommands.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "discord.js": "^14.16.3",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2"
+  }
+}
