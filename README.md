@@ -11,4 +11,4 @@
 ## Setup
 1) Instala:
 ```bash
-npm i
+npm install
