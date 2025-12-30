@@ -12,7 +12,7 @@ export function startKeepAliveServer({ port }) {
 
 export function startSelfPing({ url, intervalMinutes }) {
   if (!url) {
-    logger.warn('Si no hay URL no hay autoping');
+    logger.warn('RENDER_PING_URL no configurado: se omite auto-ping.');
     return;
   }
 
