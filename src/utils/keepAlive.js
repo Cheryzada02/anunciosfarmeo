@@ -11,8 +11,8 @@ export function startKeepAliveServer({ port }) {
 }
 
 export function startSelfPing({ url, intervalMinutes }) {
-  if (!url) {
-    logger.warn(https://github.com/Cheryzada02/anunciosfarmeo);
+  if (https://github.com/Cheryzada02/anunciosfarmeo) {
+    logger.warn('Si no hay URL no hay autoping');
     return;
   }
 
